@@ -41,8 +41,7 @@
 		3A56D8DE16156EA000016DE0 /* pleasedsquirrel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A56D8DB16156EA000016DE0 /* pleasedsquirrel.png */; };
 		3A56D8DF16156EA000016DE0 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A56D8DC16156EA000016DE0 /* rock.png */; };
 		3A56D8E116157C3A00016DE0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A56D8E016157C3A00016DE0 /* AudioToolbox.framework */; };
-		651531CD16AE6CEB00CB6390 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 651531CC16AE6CEB00CB6390 /* icon.png */; };
-		651531CF16AE6D2500CB6390 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 651531CE16AE6D2500CB6390 /* icon@2x.png */; };
+		979221421E7E300D00DA2D21 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979221411E7E300D00DA2D21 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,8 +87,7 @@
 		3A56D8DB16156EA000016DE0 /* pleasedsquirrel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pleasedsquirrel.png; sourceTree = "<group>"; };
 		3A56D8DC16156EA000016DE0 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
 		3A56D8E016157C3A00016DE0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.Internal.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		651531CC16AE6CEB00CB6390 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		651531CE16AE6D2500CB6390 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		979221411E7E300D00DA2D21 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +110,7 @@
 		3A56D87E160FC09200016DE0 = {
 			isa = PBXGroup;
 			children = (
-				651531CE16AE6D2500CB6390 /* icon@2x.png */,
-				651531CC16AE6CEB00CB6390 /* icon.png */,
+				979221411E7E300D00DA2D21 /* Media.xcassets */,
 				3A56D893160FC09300016DE0 /* Walnuts */,
 				3A56D88C160FC09300016DE0 /* Frameworks */,
 				3A56D88A160FC09300016DE0 /* Products */,
@@ -220,6 +217,12 @@
 				CLASSPREFIX = W;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = ChatGames;
+				TargetAttributes = {
+					3A56D888160FC09300016DE0 = {
+						DevelopmentTeam = FSP2U7T379;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 3A56D883160FC09200016DE0 /* Build configuration list for PBXProject "Walnuts" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -248,6 +251,7 @@
 				3A56D8A2160FC09300016DE0 /* Default@2x.png in Resources */,
 				3A56D8A4160FC09300016DE0 /* Default-568h@2x.png in Resources */,
 				3A56D8AA160FC09300016DE0 /* WViewController_iPhone.xib in Resources */,
+				979221421E7E300D00DA2D21 /* Media.xcassets in Resources */,
 				3A56D8AD160FC09300016DE0 /* WViewController_iPad.xib in Resources */,
 				3A56D8B4160FC28900016DE0 /* grassfield.jpg in Resources */,
 				3A56D8C116143C4B00016DE0 /* background-final.png in Resources */,
@@ -265,8 +269,6 @@
 				3A56D8DD16156EA000016DE0 /* madsquirrel2.png in Resources */,
 				3A56D8DE16156EA000016DE0 /* pleasedsquirrel.png in Resources */,
 				3A56D8DF16156EA000016DE0 /* rock.png in Resources */,
-				651531CD16AE6CEB00CB6390 /* icon.png in Resources */,
-				651531CF16AE6D2500CB6390 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,14 +370,18 @@
 		3A56D8B1160FC09300016DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FSP2U7T379;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Walnuts/Walnuts-Prefix.pch";
 				INFOPLIST_FILE = "Walnuts/Walnuts-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digital.walnut.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -383,14 +389,18 @@
 		3A56D8B2160FC09300016DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FSP2U7T379;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Walnuts/Walnuts-Prefix.pch";
 				INFOPLIST_FILE = "Walnuts/Walnuts-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digital.walnut.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
