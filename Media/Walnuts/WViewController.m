@@ -55,7 +55,7 @@ static const CGFloat kWSquirrelMovementScreenProportion = 0.2; // Proportion of 
 
     _squirrel = [[UIImageView alloc] initWithImage:[self _getHappySquirrel]];
     CGSize squirrelSize = [_squirrel frame].size;
-    [_squirrel setFrame:CGRectMake(floor(([UIApplication currentSize].width-squirrelSize.width)/2.0), 0, squirrelSize.width, squirrelSize.height)];
+    [_squirrel setFrame:CGRectMake(floor(([UIApplication currentSize].width-squirrelSize.width)/2.0), 30, squirrelSize.width, squirrelSize.height)];
     [[self view] addSubview:_squirrel];
     
     CGFloat basketHeight = 60.0*1.0/_scale;
@@ -68,8 +68,8 @@ static const CGFloat kWSquirrelMovementScreenProportion = 0.2; // Proportion of 
     [_basket setBackgroundColor:[UIColor yellowColor]];
     [[self view] addSubview:_basket];
     
-    _scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(3, 1, 100*1.0/_scale, 10*1.0/_scale)];
-    [_scoreLabel setFont:[UIFont boldSystemFontOfSize:floorf(12.0*1.0/_scale)]];
+    _scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 100*1.0/_scale, 10*1.0/_scale)];
+    [_scoreLabel setFont:[UIFont boldSystemFontOfSize:floorf(18.0*1.0/_scale)]];
     [_scoreLabel setTextColor:[UIColor redColor]];
     [_scoreLabel setBackgroundColor:[UIColor clearColor]];
     [[self view] addSubview:_scoreLabel];
