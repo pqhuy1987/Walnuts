@@ -378,7 +378,7 @@
 				GCC_PREFIX_HEADER = "Walnuts/Walnuts-Prefix.pch";
 				INFOPLIST_FILE = "Walnuts/Walnuts-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.media.walnut.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.media.walnutss.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -397,7 +397,7 @@
 				GCC_PREFIX_HEADER = "Walnuts/Walnuts-Prefix.pch";
 				INFOPLIST_FILE = "Walnuts/Walnuts-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.media.walnut.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.media.walnutss.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos.internal;
 				TARGETED_DEVICE_FAMILY = 1;
